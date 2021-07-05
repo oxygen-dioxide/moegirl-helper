@@ -9,6 +9,7 @@
 - 括号补全
 ![](./resource/1.gif)
 - 模板提示（目前支持的模板较少，欢迎补充）
+![](./resource/2.jpg)
 
 ## 使用方法
 
@@ -28,4 +29,4 @@ yarn install # Install devDependencies
 ```
 code .
 ```
-按F5调试
+5. 按F5调试

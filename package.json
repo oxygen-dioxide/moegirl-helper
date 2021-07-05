@@ -1,26 +1,26 @@
 {
-	"name": "wikitext",
-	"displayName": "Wikitext",
-	"description": "Wikitext is a document written in a wiki markup language. This extension provides functional support for the Wikitext language with MediaWiki such as Wikipedia.",
-	"version": "3.3.0",
-	"publisher": "RoweWilsonFrederiskHolme",
+	"name": "moegirl-helper",
+	"displayName": "萌娘百科编辑助手",
+	"description": "萌娘百科编辑助手是一款vscode插件，基于Wikitext-VSCode-Extension，提供wikitext标记语言的语法高亮与萌娘百科常用模板的自动补全",
+	"version": "0.1.0",
+	"publisher": "oxygen-dioxide",
 	"license": "SEE LICENSE IN LICENSE.txt",
 	"author": {
-		"name": "Rowe Wilson Frederisk Holme",
-		"email": "frederisk@outlook.com",
-		"url": "https://twitter.com/rwfholme"
+		"name": "oxygen-dioxide",
+		"email": "1463567152@qq.com",
+		"url": "https://github.com/oxygen-dioxide"
 	},
-	"homepage": "https://github.com/Frederisk/Wikitext-VSCode-Extension/blob/master/README.md",
-	"icon": "media/wikitext-icon.png",
+	"homepage": "https://github.com/oxygen-dioxide/moegirl-helper",
+	"icon": "Resource/logo.png",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Frederisk/Wikitext-VSCode-Extension.git"
+		"url": "https://github.com/oxygen-dioxide/moegirl-helper.git"
 	},
 	"bugs": {
-		"url": "https://github.com/Frederisk/Wikitext-VSCode-Extension/issues",
-		"email": "frederisk@outlook.com"
+		"url": "https://github.com/oxygen-dioxide/moegirl-helper/issues",
+		"email": "1463567152@qq.com"
 	},
-	"qna": "https://github.com/Frederisk/Wikitext-VSCode-Extension/discussions/categories/q-a",
+	"qna": "https://github.com/oxygen-dioxide/moegirl-helper/discussions/categories/q-a",
 	"engines": {
 		"vscode": "^1.43.0"
 	},

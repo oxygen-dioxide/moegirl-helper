@@ -108,6 +108,128 @@ pageInfo:
 
 #=moegirl snippets
 Age:
-  prefix: "{{Age"
-  body: "{{Age|${1:}|${2:}|${3:}"
-  description: 年龄计算
+  body: '{{Age|${1:}|${2:}|${3:}'
+  description: 计算年龄 {{Age|年|月|日}}
+  prefix: '{{Age'
+Astrology:
+  body: '{{Astrology|${1:}|${2:}'
+  description: 计算星座 {{Astrology|月|日}}
+  prefix: '{{Astrology'
+Birth date:
+  body: '{{Birth date|${1:}|${2:}|${3:}'
+  description: 显示出生日期 {{Birth date|1993|2|24}}
+  prefix: '{{Birth date'
+Birth date and age:
+  body: '{{Birth date and age|${1:}|${2:}|${3:}'
+  description: 显示出生日期并自动加注年龄 {{Birth date and age|1993|2|24}}
+  prefix: '{{Birth date and age'
+Chemify:
+  body: '{{Chemify|${1:}'
+  description: 自动将化学式中的数字转化为上下标 {{Chemify|IO6[5-]}}
+  prefix: '{{Chemify'
+Countdown:
+  body: '{{Countdown|time=${1:}-${2:}-${3:}T${4:}:${5:}:${6:}Z|before=${7:}|after=${8:}'
+  description: 计算指定时间与现在的差 {{Countdown|time=2050-01-01T08:00:00Z|before=你醒啦，新年已经结束啦|after=距离元旦还有$1}}
+  prefix: '{{Countdown'
+Day:
+  body: '{{Day|${1:}|${2:}|${3:}'
+  description: 计算指定日期是当年的第几天 {{Day|2000|3|1}}
+  prefix: '{{Day'
+Day Countdown:
+  body:
+  - '{{Day Countdown'
+  - '|name=${1:}'
+  - '|address=${2:}'
+  - '|logo=${3:}'
+  - '|year=${4:}'
+  - '|month=${5:}'
+  - '|day=${6:}'
+  - '|date=${7:}'
+  - '|almost=${8:}'
+  - '|utc_offset=+${9:} hours'
+  - '|on_day_text=${10:}'
+  - '|over_day_text=${11:}'
+  - '|permanentCountdown=${12:}'
+  - ''
+  description: 针对日期的倒计时模板
+  prefix: '{{Day Countdown'
+Death date and age:
+  body: '{{Death date and age|${1:}|${2:}|${3:}|${4:}|${5:}|${6:}'
+  description: 显示逝世日期并自动加注年龄 {{Death date and age|2011|10|5|1955|2|24}}
+  prefix: '{{Death date and age'
+FriendlyTimeDelta:
+  body: '{{FriendlyTimeDelta|${1:}'
+  description: 输入秒数，根据数值大小自动换算成日时分秒
+  prefix: '{{FriendlyTimeDelta'
+JK:
+  body: '{{JK|${1:}'
+  description: 删除线
+  prefix: '{{JK'
+Till last year:
+  body: '{{Till last year'
+  description: 显示去年的年份
+  prefix: '{{Till last year'
+Time Countdown:
+  body:
+  - '{{Time Countdown'
+  - '|name=${1:}'
+  - '|address=${2:}'
+  - '|logo=${3:}'
+  - '|year=${4:}'
+  - '|month=${5:}'
+  - '|day=${6:}'
+  - '|time=${7:}'
+  - '|over_text=${8:}'
+  - '|permanentCountdown=${12:}'
+  - ''
+  description: 实时倒计时模板
+  prefix: '{{Time Countdown'
+color:
+  body: '{{color|#${1:}|${2:}'
+  description: 显示指定颜色的文字 {{color|#FF8040|RUOK}}
+  prefix: '{{color'
+color_block:
+  body: '{{color_block|#${1:}'
+  description: 显示色块 {{color_block|#FF8040}}
+  prefix: '{{color_block'
+for year month day:
+  body: '{{for year month day | year=${1:} | month=${2:} | day=${3:} '
+  description: 计算指定时间与现在时间的天数差 {{ for year month day | year= 2018| month= 3| day=
+    1}}
+  prefix: '{{for year month day'
+heimu:
+  body: '{{黑幕|${1:}'
+  description: 黑幕
+  prefix: '{{heimu'
+huhua:
+  body: '{{胡话|${1:}'
+  description: 删除线
+  prefix: '{{huhua'
+max:
+  body: '{{max|${1:}'
+  description: 计算一组数据的最大值 {{max|-7|5|8}}
+  prefix: '{{max'
+shengridaojishi:
+  body: '{{生日倒计时|${1:}|${2:}'
+  description: 计算距离指定月日的天数 {{生日倒计时|12|4}}
+  prefix: '{{shengridaojishi'
+suofangjisuan:
+  body: '{{缩放计算|${1:}|${2:}|${3:}'
+  description: 输入图片原宽、原高以及目标高、按比例缩放输出目标宽 {{缩放计算|120|100|50}}=60
+  prefix: '{{suofangjisuan'
+生日倒计时:
+  body: '{{生日倒计时|${1:}|${2:}'
+  description: 计算距离指定月日的天数 {{生日倒计时|12|4}}
+  prefix: '{{生日倒计时'
+缩放计算:
+  body: '{{缩放计算|${1:}|${2:}|${3:}'
+  description: 输入图片原宽、原高以及目标高、按比例缩放输出目标宽 {{缩放计算|120|100|50}}=60
+  prefix: '{{缩放计算'
+胡话:
+  body: '{{胡话|${1:}'
+  description: 删除线
+  prefix: '{{胡话'
+黑幕:
+  body: '{{黑幕|${1:}'
+  description: 黑幕
+  prefix: '{{黑幕'
