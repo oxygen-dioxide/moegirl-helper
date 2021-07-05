@@ -7,9 +7,9 @@
 - 语法高亮
 ![](./Resource/2021-07-05-12-54-12.png)
 - 括号补全
-![](./resource/1.gif)
+![](./Resource/1.gif)
 - 模板提示（目前支持的模板较少，欢迎补充）
-![](./resource/2.jpg)
+![](./Resource/2.jpg)
 
 ## 使用方法
 
