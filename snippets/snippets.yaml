@@ -105,3 +105,9 @@ pageInfo:
     [END_PAGE_INFO] --%>
   description: Page Info Struct
   scope: ""
+
+#=moegirl snippets
+Age:
+  prefix: "{{Age"
+  body: "{{Age|${1:}|${2:}|${3:}"
+  description: 年龄计算

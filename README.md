@@ -1,101 +1,31 @@
-# Wikitext Markup Language Support Extension for Visual Studio Code
+# 萌娘百科编辑助手
 
-[![VSMarket: wikitext](https://vsmarketplacebadge.apphb.com/version/RoweWilsonFrederiskHolme.Wikitext.svg?color=blueviolet&logo=visual-studio-code&style=?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=RoweWilsonFrederiskHolme.wikitext)
-[![GitHub: wikitext](https://img.shields.io/badge/GitHub-wikitext-yellow)](https://github.com/Frederisk/Wikitext-VSCode-Extension)
-[![Build status](https://ci.appveyor.com/api/projects/status/25okygmf42atyvi0?svg=true)](https://ci.appveyor.com/project/Frederisk/wikitext-vscode-extension)
-[![GitHub Actions CodeQL](https://github.com/Frederisk/Wikitext-VSCode-Extension/actions/workflows/codeql-analysis.yml/badge.svg/)](https://github.com/Frederisk/Wikitext-VSCode-Extension/actions?query=workflow%3ACodeQL)
-[![CodeFactor Status](https://www.codefactor.io/repository/github/frederisk/wikitext-vscode-extension/badge)](https://www.codefactor.io/repository/github/frederisk/wikitext-vscode-extension)
-[![Twitter: @rwfholme](https://img.shields.io/badge/twitter-%40rwfholme-blue)](https://twitter.com/rwfholme)
-[![Patreon Donate](https://img.shields.io/badge/donate-patreon-orange)](https://www.patreon.com/rwfholme)
+萌娘百科编辑助手是一款vscode插件，基于[Wikitext-VSCode-Extension](https://github.com/Frederisk/Wikitext-VSCode-Extension)。
 
-This Visual Studio Code Extension provides support of Wikitext Markup language. With this extension, you can more easily discover your grammatical problems through the marked and styled text. The plugin is based on MediaWiki's Wikitext standard, but the rules are somewhat stricter, which helps users write text that is easier to read and maintain.
+## 特性
 
-Of course, the development of this extension is short, and there may be some errors in operation and labeling. If you find a problem, please report it to me immediately for resolution.
+- 语法高亮
+![](./Resource/2021-07-05-12-54-12.png)
+- 括号补全
+![](./resource/1.gif)
+- 模板提示（目前支持的模板较少，欢迎补充）
 
-If you get help with this project, give this project a star or recommend it to others, thanks!😸
+## 使用方法
 
-## Features
-
-- Color and style annotations of Wikitext can make it easier for users to intuitively find problems in writing grammatical formats.
-
-    <img alt="Code main page" src="https://user-images.githubusercontent.com/29837738/120096683-7a217900-c15f-11eb-9f9c-b4d77ecce486.png" width="512"/>
-
-- Automatic matching and closing of simple parentheses reduces unnecessary double typing.
-
-    <img alt="Code video" src="https://user-images.githubusercontent.com/29837738/120096717-a6d59080-c15f-11eb-9921-e5555de74f29.gif" width="512"/>
-
-- The special comment syntax\(`<!--#region-->`&`<!--#endregion-->`\) can folds the code for easy reading.
-
-    <img alt="Code region" src="https://user-images.githubusercontent.com/29837738/120096736-c076d800-c15f-11eb-8f70-7cfdd73a3307.gif" width="512"/>
-
-- Press `Ctrl + Shift + V` or click the Preview icon in the title menu bar directly in the Wikitext content to get a parsed preview of Wikitext in the currently active text editor.
-
-    <img alt="Code previewer" src="https://user-images.githubusercontent.com/29837738/120096761-ddaba680-c15f-11eb-8d14-f0705f7d39ba.gif" width="512">
-
-- Enter `@[name]` to get a snippet of wikitext. Such as `@table`, `@region`, `@title`...
-
-    <img alt="Code snippets" src="https://user-images.githubusercontent.com/29837738/120096799-0af85480-c160-11eb-8a34-f47603a41935.gif" width="512">
-
-- You can modify the website content by logging in directly in VSCode! Enter the settings page, search Wikitext and find the username and password items, and fill in them. Then press `F1` in the text editor, select `Post your page to the website`!
-
-- Obtain the Wikitext source code directly in VSCode according to the page name without opening the web page. Press `F1` and select `Pull page to edit` to use this function.
-
-- Browse the page by entering the page name. Press `F1` then select `View the page`.
-
-## Release Notes
-
-- Removed unnecessary assets, The size of the installation file is now ⅒ the original size!
-- Enhanced URI view page function.
-- Added Table caption syntax.
-- Added `<ref>` tag synax.
-- Fixed errors about XML syntax.
-- Turn part of the synax analysis into a built-in language extension that depends on VSCode such as XML and JSON.
-- Changed some of textmate scopes.
-- The extension will be activated when language is set to wikitext to speed up user commands.
-
-## Usage
-
-### Usage Requirements
-
-Please ensure that your VSCode version is higher than 1.43.0, this version requirements may change in the future.
-
-Generally speaking, make sure that your VSCode is always the latest version.
-
-## Development
-
-### Development Requirements
-
-- [Node.js](https://nodejs.org) (with npm) at least 10.x.x
-
-### How to build this extension yourself
-
-Firstly, clone this repository and change directory to the repository, then install VS Code Extension Manager and other packages:
-
-```bash
+## 开发
+1. 安装[Nodejs](https://nodejs.org/) 10以上版本
+2. 下载本仓库并进入目录
+```
+git clone https://github.com/oxygen-dioxide/moegirl-helper
+cd moegirl-helper
+```
+3. 安装依赖项
+```
 npm install yarn vsce -g # VS Code Extension Manager
 yarn install # Install devDependencies
 ```
-
-Package this project and you will get a .vsix file:
-
-```bash
-vsce package --yarn # Package Extension with yarn
+4. 用github打开当前文件夹
 ```
-
-This is it!
-
-## Special Thanks
-
-- [caltaojihun](https://github.com/caltaojihun)
-- [Jason Williams](https://github.com/jasonwilliams)
-- [quicktype](https://github.com/quicktype)
-- [dj radon](https://github.com/djradon)
-
-<!-- ## Extension Settings
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-For example:
-This extension contributes the following settings:
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something -->
-<!-- ## Known Issues
-Calling out known issues can help limit users opening duplicate issues against your extension. -->
+code .
+```
+按F5调试
