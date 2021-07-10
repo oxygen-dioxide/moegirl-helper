@@ -46,7 +46,7 @@
 		"commands": [
 			{
 				"command": "wikitext.getPreview",
-				"title": "Get preview",
+				"title": "预览",
 				"category": "Wikitext",
 				"icon": {
 					"light": "./media/preview-light.svg",
@@ -55,32 +55,32 @@
 			},
 			{
 				"command": "wikitext.login",
-				"title": "Login with your account",
+				"title": "登录",
 				"category": "Wikitext"
 			},
 			{
 				"command": "wikitext.logout",
-				"title": "Logout, if you are already logged in",
+				"title": "退出登录",
 				"category": "Wikitext"
 			},
 			{
 				"command": "wikitext.readPage",
-				"title": "Pull page to edit",
+				"title": "拉取页面以开始编辑",
 				"category": "Wikitext"
 			},
 			{
 				"command": "wikitext.writePage",
-				"title": "Post your edit to the website",
+				"title": "将你编辑的页面推送到网站上",
 				"category": "Wikitext"
 			},
 			{
 				"command": "wikitext.viewPage",
-				"title": "View the page",
+				"title": "查看页面",
 				"category": "Wikitext"
 			},
 			{
 				"command": "wikitext.citeWeb",
-				"title": "Add a web citation",
+				"title": "添加网页引用",
 				"category": "Wikitext"
 			}
 		],
@@ -178,39 +178,39 @@
 				"wikitext.host": {
 					"type": "string",
 					"default":"zh.moegirl.org.cn",
-					"description": "The host that provides the API, such as 'en.wikipedia.org'."
+					"description": "wiki站点，例如 'zh.moegirl.org.cn'."
 				},
 				"wikitext.userName": {
 					"type": "string",
-					"description": "The user name of wikimedia site."
+					"description": "wiki站点的用户名"
 				},
 				"wikitext.password": {
 					"type": "string",
-					"description": "The password of user. It will be fixed in the software settings, please do not fill in the device in public places."
+					"description": "wiki站点的用户密码，保存在本地，请勿在公共电脑上输入"
 				},
 				"wikitext.redirects": {
 					"type": "boolean",
-					"description": "When the input page is a redirect page, jump automatically.",
+					"description": "遇到重定向页面时自动跳转",
 					"default": true
 				},
 				"wikitext.apiPath": {
 					"type": "string",
-					"markdownDescription": "Set the basic path to obtain the API. If you are not sure, please check the `Special:Version` page of your site.",
+					"markdownDescription": "wiki站点的api接入点url，可在wiki站点的Special:Version查看",
 					"default": "/api.php"
 				},
 				"wikitext.getCss": {
 					"type": "boolean",
-					"description": "Get CSS when previewing the page. Please note that this feature will greatly increase the extended workload, and some rendering effects may conflict with VSCode. To get the correct display, you may need to enable Previewer's JS support.",
+					"description": "预览页面时获取CSS。注意：这会显著增大负载，部分渲染效果可能会与VSCode冲突。为得到正确的显示，请打开预览器的JS支持（wikitext.enableJavascript）。",
 					"default": false
 				},
 				"wikitext.enableJavascript": {
 					"type": "boolean",
-					"description": "Enable Previewer's JS support. This feature may affect the performance of VSCode and introduce potential security risks.",
+					"description": "预览器的JS支持。这可能会影响VSCode的性能，并带来潜在安全风险。",
 					"default": false
 				},
 				"wikitext.articlePath": {
 					"type": "string",
-					"markdownDescription": "Set the basic path to obtain the article. please check the `Special:Version` page of your site (No need for `$1`).",
+					"markdownDescription": "wiki站点的文章根目录，可在wiki站点的Special:Version查看",
 					"default": "/"
 				},
 				"wikitext.webCiteFormat": {
@@ -229,7 +229,7 @@
 						"HyperText Transfer Protocol",
 						"HyperText Transfer Protocol Secure"
 					],
-					"description": "Select the transfer protocol used when accessing the API."
+					"description": "调用api时使用的协议（http或https）"
 				},
 				"wikitext.previewCssStyle": {
 					"type": "string",
